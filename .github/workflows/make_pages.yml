@@ -14,5 +14,5 @@ jobs:
       - name: Push to gh-pages
         uses: pcinereus/test-actions@gh-pages
         with:
-          github_token: ${{ secretes.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/
