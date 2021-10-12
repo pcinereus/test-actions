@@ -1,0 +1,8 @@
+name: Test
+output_dir: '.'
+navbar:
+  title: A test 
+  right:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
