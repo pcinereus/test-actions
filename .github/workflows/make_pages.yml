@@ -11,3 +11,8 @@ jobs:
       - run: sudo apt-get install r-base pandoc make fonts-dejavu-extra
       - run: sudo R -e "install.packages(c('rmarkdown','bookdown'));"
       - run: make -i page
+      - name: Push to gh-pages
+        uses: pcinereus/test-actions
+        with:
+          github_token: ${{ secretes.GITHUB_TOKEN }}
+          publish_dir: docs/
