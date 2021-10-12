@@ -10,9 +10,12 @@ jobs:
         with:
           node-version: '14'
 
-      # install R and packages
+      # install R
       - name: Install R
         run: sudo apt-get install r-base pandoc make fonts-dejavu-extra
+
+      # install R packages
+      - name: Install R packages
         run: sudo R -e "install.packages(c('rmarkdown','bookdown'));"
 
       #	Make site
