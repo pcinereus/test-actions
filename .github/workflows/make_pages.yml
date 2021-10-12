@@ -12,7 +12,7 @@ jobs:
       - run: sudo R -e "install.packages(c('rmarkdown','bookdown'));"
       - run: make -i page@gh-pages
       - name: Push to gh-pages
-        uses: pcinereus/test-actions
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/
+          branch: gh-pages
+          folder: public
