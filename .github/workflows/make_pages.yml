@@ -2,7 +2,7 @@ name: test_make_pages.yml
 on: [push]
 jobs:
   test_make_pages_job:
-    runs-on: utuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
