@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-	  
+
       # install R and packages
       - name: Install R
         run: sudo apt-get install r-base pandoc make fonts-dejavu-extra
