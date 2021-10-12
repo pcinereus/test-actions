@@ -9,5 +9,5 @@ jobs:
         with:
           node-version: '14'
       - run: sudo apt-get install r-base pandoc make fonts-dejavu-extra
-      - run: sudo R -e "install.packages('rmarkdown');"
+      - run: sudo R -e "install.packages(c('rmarkdown','bookdown'));"
       - run: make -i page
